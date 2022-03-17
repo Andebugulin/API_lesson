@@ -48,7 +48,7 @@ map_params = {
     "l": "map",
     "pt": ",".join([toponym_longitude, toponym_lattitude])
 }
-
+pprint.pprint(map_params)
 map_api_server = "http://static-maps.yandex.ru/1.x/"
 # ... и выполняем запрос
 response = requests.get(map_api_server, params=map_params)
